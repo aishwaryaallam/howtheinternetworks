@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>How Internet works</title>
+
+    <style>
+
+        .blog-footer {
+            padding: 2rem 0;
+            color: #999;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-top: .025rem solid #e5e5e5;
+        }
+
+        .blog-footer p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header class="bg-light mb-4">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav nav-pills me-auto my-2 my-lg-0 navbar-nav-scroll"
+                        style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link p-2 " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2 " href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="howInternetWorks.html">How the Internet Works</a>
+                                </li>
+                                <li><a class="dropdown-item" href="dnsIcann.html">DNS and ICANN</a></li>
+                                <li><a class="dropdown-item active" href="ipPacketRouting.html">IP Addresses, Packets
+                                    and Routing</a>
+                                </li>
+                                <li><a class="dropdown-item" href="httpProtocols.html">HTTP and HTTPS Protocols</a></li>
+                                <li><a class="dropdown-item" href="w3cHtmlCss.html">W3C, HTML, and CSS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+</header>
+<main class="container">
+    <div class="row">
+        <div class="col-8">
+            <h1>IP Addresses, Packets and Routing</h1>
+
+            <h5>IP Address</h5>
+            <p>IP stands for “internet protocol” which is a set of rules that dictate how data should be delivered over
+                the public network (internet). An IP address is the identifier that allows information to be sent
+                between
+                devices on a network: they contain local information which allow devices to be accessible for
+                communication. The internet needs a way to differentiate between different computers, routers,
+                websites, and an IP address proves a way of doing so. Like your home address an IP Address is a unique
+                address that identifies a device on the internet or a local network. An IP address is a string of
+                numbers
+                separated by periods. IP addresses are expressed as a set of four numbers. For example, 154.234.5.65.
+                Each number in the sent can range from 0 to 255.</p>
+
+            <p>IP addresses are not random numbers, but instead are a mathematically produced and allocated by the
+                internet assigned numbers authority. Any time someone registers a domain on the internet, they go
+                through a domain name registrar who then pays a fee to the Corporation for Assigned Names and
+                Numbers to register the domain.</p>
+            <div class="text-center">
+                <img class="rounded mt-3 mb-5" width="800rem" height="350rem" src="images/routing.png">
+            </div>
+
+            <h5>How do IP addresses work?</h5>
+            <p>Internet protocol works in the same manner as a language, by communicating using set guidelines to
+                pass along information. By using this protocol devices find, send, and exchange information with other
+                connected devices. By “speaking the same language” any device in any location can talk to one another.
+                Packets</p>
+            <p>In most networks’ packets are the unit of communication and transmission. The rules of TCP/IP require
+                information to be split into packets that contain both a segment of data to be transferred and the
+                address where the data needs to be sent. Each IP packet contains both a header which is about 20 to 24
+                bytes long and data (variable length). The header includes the IP address of the source and destination,
+                plus other information that helps rout the packet. The data is the actual content, for example a string
+                of
+                letters that is a part of an email.</p>
+            <h5>Routing</h5>
+            <p>IP routing is the process of sending packets within and across IP networks. IP routing is a set of
+                protocols
+                that determine the path that data follows to travel across multiple networks from its source to its
+                destination. Data is routed from its source to its destination through a series of routers, and across
+                multiple networks.</p>
+
+        </div>
+    </div>
+</main>
+
+<footer class="blog-footer mt-lg-5">
+    <p>To know more about How Internet Works <a
+            href="https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm">Click
+        Here</a></p>
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+</footer>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+-->
+</body>
+</html>
